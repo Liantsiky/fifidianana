@@ -1,0 +1,10 @@
+package org.fifidianana.repository;
+
+import org.fifidianana.model.Region;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RegionRepository extends JpaRepository<Region, Integer> {
+
+	Region findByDesignation(String string);
+	
+}
